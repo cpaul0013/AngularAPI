@@ -1,0 +1,6 @@
+<p>Aw Reddit</p>
+<div *ngFor='let p of RedditPosts;index as i'>
+    <p>{{ i+1 }} {{ p.data.title }}  </p>
+    <a href="{{ p.data.url }}"> <p>{{ p.data.url }}</p></a>
+    <img src="{{ p.data.thumbnail }}">
+</div>
